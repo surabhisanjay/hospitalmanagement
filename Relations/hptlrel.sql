@@ -1,0 +1,65 @@
+-- Insert into hptldept
+INSERT INTO hptldept (dept_id, dept_name, mgr_name) VALUES
+(1, 'Cardiology', 'Dr. Smith'),
+(2, 'Neurology', 'Dr. Johnson'),
+(3, 'Orthopedics', 'Dr. Lee'),
+(4, 'Pediatrics', 'Dr. Brown'),
+(5, 'Oncology', 'Dr. White'),
+(6, 'Dermatology', 'Dr. Adams'),
+(7, 'Psychiatry', 'Dr. Carter'),
+(8, 'Gastroenterology', 'Dr. Evans'),
+(9, 'Endocrinology', 'Dr. Martinez'),
+(10, 'Urology', 'Dr. Harris');
+
+-- Insert into doctor
+INSERT INTO doctor (id, name, spec, salary, dept_id) VALUES
+(1, 'Dr. Alice', 'Cardiology', 150000.00, 1),
+(2, 'Dr. Bob', 'Neurology', 140000.00, 2),
+(3, 'Dr. Charlie', 'Orthopedics', 135000.00, 3),
+(4, 'Dr. David', 'Pediatrics', 120000.00, 4),
+(5, 'Dr. Emily', 'Oncology', 155000.00, 5),
+(6, 'Dr. Frank', 'Dermatology', 130000.00, 6),
+(7, 'Dr. Grace', 'Psychiatry', 125000.00, 7),
+(8, 'Dr. Henry', 'Gastroenterology', 145000.00, 8),
+(9, 'Dr. Irene', 'Endocrinology', 138000.00, 9),
+(10, 'Dr. Jake', 'Urology', 132000.00, 10);
+
+-- Insert into assigned_room
+INSERT INTO assigned_room (building_name, room_num) VALUES
+('Building A', 101),
+('Building A', 102),
+('Building B', 201),
+('Building B', 202),
+('Building C', 301),
+('Building C', 302),
+('Building D', 401),
+('Building D', 402),
+('Building E', 501),
+('Building E', 502);
+
+-- Insert into patient
+INSERT INTO patient (id, name, building_name, room_num) VALUES
+(1, 'John Doe', 'Building A', 101),
+(2, 'Jane Smith', 'Building A', 102),
+(3, 'Sam Wilson', 'Building B', 201),
+(4, 'Lucy Brown', 'Building B', 202),
+(5, 'Mike Davis', 'Building C', 301),
+(6, 'Emma Watson', 'Building C', 302),
+(7, 'Daniel Lee', 'Building D', 401),
+(8, 'Sophia Miller', 'Building D', 402),
+(9, 'Ethan White', 'Building E', 501),
+(10, 'Olivia Taylor', 'Building E', 502);
+
+-- Insert into diagnosis
+INSERT INTO diagnosis (doctor_id, patient_id, diagnosis_desc, treatment_plan, diagnosis_date) VALUES
+(1, 1, 'Heart arrhythmia', 'Medication and lifestyle change', '2024-03-01'),
+(2, 2, 'Migraine', 'Pain management therapy', '2024-03-02'),
+(3, 3, 'Fractured leg', 'Surgery and physiotherapy', '2024-03-03'),
+(4, 4, 'Asthma', 'Inhaler and monitoring', '2024-03-04'),
+(5, 5, 'Lung cancer', 'Chemotherapy', '2024-03-05'),
+(6, 6, 'Acne', 'Topical treatment', '2024-03-06'),
+(7, 7, 'Depression', 'Cognitive therapy', '2024-03-07'),
+(8, 8, 'Acid reflux', 'Dietary changes', '2024-03-08'),
+(9, 9, 'Diabetes', 'Insulin therapy', '2024-03-09'),
+(10, 10, 'Kidney stones', 'Hydration and pain management', '2024-03-10');
+
